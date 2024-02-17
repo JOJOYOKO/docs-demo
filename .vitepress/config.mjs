@@ -10,6 +10,13 @@ export default defineConfig({
   head: [["link", { rel: "icon", href: "/docs-demo/改中国龙.png" }]],
   title: "我的项目",
   description: "A VitePress Site",
+  lastUpdated: true,
+  markdown:{
+    theme:'material-theme-palenight',
+    lineNumbers:true
+  },
+  outDir: './dist',
+  srcDir: './markdown',
   themeConfig: {
     logo:"首页logo.svg",
     // https://vitepress.dev/reference/default-theme-config
