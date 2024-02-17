@@ -1,5 +1,7 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
 import { set_sidebar } from '../utils/sidebar.mjs';
+import { docsAuto } from '@yicode/yidocs-auto';
+let { navBar, sidebar } = docsAuto();
 // 改成自己的路径
 
 // https://vitepress.dev/reference/site-config
@@ -34,16 +36,16 @@ export default defineConfig({
       },
 
 
-    nav: [
-      { text: '首页', link: '/' },
-      {text:'环境搭建', link:'/momo/'},
-      {text:'其他', link:"/front-end/"},
-      { text: '示例', items: [
-        { text: 'Markdown 示例', link: '/markdown-examples' },
-        { text: 'API 示例', link: '/api-examples' }
-      ] },
+    // nav: [
+    //   { text: '首页', link: '/' },
+    //   {text:'环境搭建', link:'/momo/'},
+    //   {text:'其他', link:"/front-end/"},
+    //   { text: '示例', items: [
+    //     { text: 'Markdown 示例', link: '/markdown-examples' },
+    //     { text: 'API 示例', link: '/api-examples' }
+    //   ] },
       
-    ],
+    // ],
 
     // sidebar: [
     //   {
@@ -62,14 +64,17 @@ export default defineConfig({
     //     ]
     //   }
     // ],
-    sidebar: 
-    // false, // 关闭侧边栏
-    // aside: "left", // 设置右侧侧边栏在左侧显示
-    {
-       '/momo/': set_sidebar('momo'),
-       "/front-end/": set_sidebar("front-end"),
+    // sidebar: 
+    // // false, // 关闭侧边栏
+    // // aside: "left", // 设置右侧侧边栏在左侧显示
+    // //右侧边栏自动生成
+    // {
+    //    '/momo/': set_sidebar('momo'),
+    //    "/front-end/": set_sidebar("front-end"),
        
-    },
+    // },
+    nav: navBar,
+    sidebar: sidebar,
     
      
 
