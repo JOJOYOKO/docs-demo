@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress';
 import { set_sidebar } from '../utils/sidebar.mjs';
 import { docsAuto } from '@yicode/yidocs-auto';
-let { navBar, sidebar } = docsAuto();
+let { sideBar,navBar } = docsAuto();
 // 改成自己的路径
 
 // https://vitepress.dev/reference/site-config
@@ -81,7 +81,7 @@ export default defineConfig({
        
     // },
     nav: navBar,
-    sidebar: sidebar,
+    sidebar: sideBar,
     
      
 
