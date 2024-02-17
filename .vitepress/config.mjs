@@ -4,7 +4,8 @@ import { set_sidebar } from '../utils/sidebar.mjs';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  head: [["link", { rel: "icon", href: "/改中国龙.png" }]],
+  base:'/docs-demo/',
+  head: [["link", { rel: "icon", href: "/docs-demo/改中国龙.png" }]],
   title: "我的项目",
   description: "A VitePress Site",
   themeConfig: {
