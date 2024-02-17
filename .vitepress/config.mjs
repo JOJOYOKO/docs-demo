@@ -13,7 +13,7 @@ export default defineConfig({
   lastUpdated: true,
   markdown:{
     theme:'material-theme-palenight',
-    lineNumbers:true
+    lineNumbers:false
   },
   outDir: './dist',
   srcDir: './markdown',
