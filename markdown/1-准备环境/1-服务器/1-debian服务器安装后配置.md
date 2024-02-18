@@ -1,6 +1,6 @@
 # debian服务器安装后配置
 
-## 1、sudo命令提示，不在sudoers文件中。
+## sudo命令提示，不在sudoers文件中。
 
 解决方法：先切换至root用户，输入命令：`su root`，然后输入密码
 
@@ -61,8 +61,6 @@
 ![](https://pic3.zhimg.com/80/v2-0c8f5828287340835fae7acf20acf62a_1440w.webp)
 
 14、此时已经没有了先去的报错，用户也已经创建成功，大功告成！！！
-
-
 
 ## 请使用 apt-cdrom，通过它可以让 APT 识别该盘片。apt-get upgdate 不能被用来加入新的盘片。问题
 
